@@ -5,4 +5,4 @@ test: test_install
 	@py.test --cov-report term-missing --cov=deprecated
 
 upload:
-	@python setup.py sdist upload
+	@python setup.py sdist bdist_wheel upload
