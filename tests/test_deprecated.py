@@ -111,11 +111,17 @@ class DeprecatedTest(unittest.TestCase):
             self.assertEqual(len(warns), 0)
 
     def test_should_raise_TypeError(self):
-        with self.assertRaises(TypeError):
+        try:
             deprecated(5)
+            self.fail("TypeError not called")
+        except TypeError:
+            pass
 
     def test_should_have_a_docstring(self):
         docstring = old_function_with_docstring.__doc__
-        # assertIsNotNone() and assertIn() are not available in Python 2.6
         self.assertTrue(docstring is not None)
         self.assertTrue("This is an old function." in docstring)
+
+
+if __name__ == '__main__':
+    unittest.main(module='tests.test_deprecated')
