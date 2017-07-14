@@ -17,9 +17,38 @@ To use this, decorate your deprecated method with **@deprecated** decorator:
 ```python
 from deprecated import deprecated
 
+
 @deprecated
-def deprecated_function():
-    ...
+def some_old_function(x, y):
+    return x + y
+```
+
+You can also decorate a class or a method:
+
+```python
+from deprecated import deprecated
+
+
+class SomeClass(object):
+    @deprecated
+    def some_old_method(self, x, y):
+        return x + y
+
+
+@deprecated
+class SomeOldClass(object):
+    pass
+```
+
+You can give a "reason" message to help the developer to choose another function/class:
+
+```python
+from deprecated import deprecated
+
+
+@deprecated(reason="use another function")
+def some_old_function(x, y):
+    return x + y
 ```
 
 ## Author:
