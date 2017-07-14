@@ -116,5 +116,6 @@ class DeprecatedTest(unittest.TestCase):
 
     def test_should_have_a_docstring(self):
         docstring = old_function_with_docstring.__doc__
-        self.assertIsNotNone(docstring)
+        # assertIsNotNone() is not available in Python 2.6
+        self.assertTrue(docstring is not None)
         self.assertIn("This is an old function.", docstring)
