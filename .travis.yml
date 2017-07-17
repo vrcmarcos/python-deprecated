@@ -11,9 +11,9 @@ python:
   - "nightly" # currently points to 3.7-dev
   - "pypy"
 install:
-  - pip install -r requirements_test.txt
+  - pip install tox
   - pip install coveralls
 script:
-  make test
+  tox
 after_success:
   coveralls
