@@ -53,7 +53,11 @@ def some_old_function(x, y):
 
 ## Author:
 
-The author/code was made in [this StackOverflow post](http://stackoverflow.com/questions/2536307/decorators-in-the-python-standard-lib-deprecated-specifically) by [Leandro Regueiro](http://stackoverflow.com/users/1336250/leandro-regueiro), [Patrizio Bertoni](http://stackoverflow.com/users/1315480/patrizio-bertoni) and [Eric](http://stackoverflow.com/users/102441/eric)
+The author/code was made in [this StackOverflow post](https://stackoverflow.com/questions/2536307/decorators-in-the-python-standard-lib-deprecated-specifically) by
+[Leandro REGUEIRO](https://stackoverflow.com/users/1336250/leandro-regueiro),
+[Patrizio BERTONI](https://stackoverflow.com/users/1315480/patrizio-bertoni),
+[Eric](https://stackoverflow.com/users/102441/eric) and
+[Laurent LAPORTE](https://stackoverflow.com/users/1513933/laurent-laporte).
 
 ## Contributing
 
