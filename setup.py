@@ -4,7 +4,7 @@ u"""
 Python-Deprecated
 -----------------
 
-Python ``@deprecated`` decorator to deprecate old python functions or methods.
+Python ``@deprecated`` decorator to deprecate old python classes, functions or methods.
 
 Deprecated is Easy to Use
 `````````````````````````

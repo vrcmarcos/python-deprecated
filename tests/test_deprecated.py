@@ -3,58 +3,58 @@
 import unittest
 import warnings
 
-from deprecated import deprecated
+import deprecated
 
 
 def some_function():
     pass
 
 
-@deprecated
+@deprecated.deprecated
 def some_old_function1(x, y):
     return x + y
 
 
-@deprecated("use another function")
+@deprecated.deprecated("use another function")
 def some_old_function2(x, y):
     return x + y
 
 
-@deprecated(reason="use another function")
+@deprecated.deprecated(reason="use another function")
 def some_old_function3(x, y):
     return x + y
 
 
 class SomeClass(object):
-    @deprecated
+    @deprecated.deprecated
     def some_old_method1(self, x, y):
         return x + y
 
-    @deprecated("use another method")
+    @deprecated.deprecated("use another method")
     def some_old_method2(self, x, y):
         return x + y
 
-    @deprecated(reason="use another method")
+    @deprecated.deprecated(reason="use another method")
     def some_old_method3(self, x, y):
         return x + y
 
 
-@deprecated
+@deprecated.deprecated
 class SomeOldClass1(object):
     pass
 
 
-@deprecated("use another class")
+@deprecated.deprecated("use another class")
 class SomeOldClass2(object):
     pass
 
 
-@deprecated(reason="use another class")
+@deprecated.deprecated(reason="use another class")
 class SomeOldClass3(object):
     pass
 
 
-@deprecated(reason="Use something else!")
+@deprecated.deprecated(reason="Use something else!")
 def old_function_with_docstring(x, y):
     """
     This is an old function.
@@ -112,7 +112,7 @@ class DeprecatedTest(unittest.TestCase):
 
     def test_should_raise_TypeError(self):
         try:
-            deprecated(5)
+            deprecated.deprecated(5)
             self.fail("TypeError not called")
         except TypeError:
             pass
@@ -121,6 +121,12 @@ class DeprecatedTest(unittest.TestCase):
         docstring = old_function_with_docstring.__doc__
         self.assertTrue(docstring is not None)
         self.assertTrue("This is an old function." in docstring)
+
+    def test_deprecated_has_docstring(self):
+        self.assertTrue(deprecated.__doc__ is not None)
+
+    def test_deprecated_has_version(self):
+        self.assertTrue(deprecated.__version__ is not None)
 
 
 if __name__ == '__main__':
