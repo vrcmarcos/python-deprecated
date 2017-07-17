@@ -55,6 +55,22 @@ def some_old_function(x, y):
 
 The author/code was made in [this StackOverflow post](http://stackoverflow.com/questions/2536307/decorators-in-the-python-standard-lib-deprecated-specifically) by [Leandro Regueiro](http://stackoverflow.com/users/1336250/leandro-regueiro), [Patrizio Bertoni](http://stackoverflow.com/users/1315480/patrizio-bertoni) and [Eric](http://stackoverflow.com/users/102441/eric)
 
+## Contributing
+
+### Releasing with bumpversion
+
+[BumpVersion](https://pypi.python.org/pypi/bumpversion) is a small command line
+tool to simplify releasing software by updating all version strings in your
+source code by the correct increment. And it also creates commits and tags.
+
+To use it, "pip install bumpversion", then use one of the following command:
+
+- `bumpversion patch`: to bump a patch/bug fix release,
+- `bumpversion minor`: to bump a minor release,
+- `bumpversion major`: to bump a major release.
+
+Then you can push the commits and the last tag: `git push origin v<version>`.
+
 ## Changelog
 
 #### 1.0.0:
