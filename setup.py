@@ -93,8 +93,8 @@ setup(
     ],
     extras_require={
         'dev': [
-            'pytest>=3.1<3.2',
-            'pytest-cov>=2.5,<2.6',
+            'pytest',
+            'pytest-cov',
             'tox',
             'bumpversion',
         ],
