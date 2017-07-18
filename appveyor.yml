@@ -3,6 +3,12 @@
 
 environment:
   matrix:
+    - PYTHON: "C:\\Python26"
+      TOX_ENV: "py26"
+
+    - PYTHON: "C:\\Python26-x64"
+      TOX_ENV: "py26"
+
     - PYTHON: "C:\\Python27"
       TOX_ENV: "py27"
 
