@@ -90,5 +90,13 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries :: Python Modules'
-    ]
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=3.1<3.2',
+            'pytest-cov>=2.5,<2.6',
+            'tox',
+            'bumpversion',
+        ],
+    },
 )

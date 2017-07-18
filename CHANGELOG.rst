@@ -30,6 +30,7 @@ Other
 - Add `BumpVersion <https://github.com/peritus/bumpversion>`_ configuration file.
 - Improve project settings: add a long description for the project.
   Set the **license** and the **development status** in the classifiers property.
+- Add the :file:`CONTRIBUTING.rst` file: "How to contribute to Python-Deprecated".
 
 
 v1.0.0 (2016-08-30)
