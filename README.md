@@ -79,8 +79,3 @@ To use it, "pip install bumpversion", then use one of the following command:
 - `bumpversion major`: to bump a major release.
 
 Then you can push the commits and the last tag: `git push origin v<version>`.
-
-## Changelog
-
-#### 1.0.0:
-- **deprecated**: Created **@deprecated** decorator
