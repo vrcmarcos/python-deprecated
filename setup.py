@@ -68,7 +68,7 @@ setup(
     license='MIT',
     author='Marcos Cardoso',
     author_email='vrcmarcos@gmail.com',
-    description='Python Deprecated Decorator',
+    description='Python @deprecated decorator to deprecate old python classes, functions or methods.',
     long_description=__doc__,
     packages=['deprecated'],
     zip_safe=False,
@@ -97,6 +97,7 @@ setup(
             'pytest-cov',
             'tox',
             'bumpversion',
+            'sphinx',
         ],
     },
 )

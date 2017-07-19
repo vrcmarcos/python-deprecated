@@ -63,6 +63,8 @@ def deprecated(reason):
        def some_old_function(x, y):
            return x + y
 
+    :type  reason: str or callable or type
+    :param reason: Reason message (or function/class/method to decorate).
     """
 
     if isinstance(reason, string_types):
