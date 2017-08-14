@@ -86,7 +86,7 @@ He will have:
    'Greeting'
    'Greeting'
 
-.. note:: The call is done to the same object,so we have 3 times 'Greeting'.
+.. note:: The call is done to the same object, so we have 3 times 'Greeting'.
 
 
 Deprecated class
