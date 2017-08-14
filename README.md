@@ -56,7 +56,7 @@ def some_old_function(x, y):
     return x + y
 ```
 
-## Author:
+## Authors
 
 The author/code was made in [this StackOverflow post](https://stackoverflow.com/questions/2536307/decorators-in-the-python-standard-lib-deprecated-specifically) by
 [Leandro REGUEIRO](https://stackoverflow.com/users/1336250/leandro-regueiro),
