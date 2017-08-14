@@ -70,6 +70,7 @@ setup(
     author_email='vrcmarcos@gmail.com',
     description='Python @deprecated decorator to deprecate old python classes, functions or methods.',
     long_description=__doc__,
+    keywords='deprecate,deprecated,deprecation,warning,warn,decorator',
     packages=['deprecated'],
     zip_safe=False,
     include_package_data=True,
