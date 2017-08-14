@@ -8,6 +8,7 @@ Python ``@deprecated`` decorator to deprecate old python classes, functions or m
 [![GitHub version](https://badge.fury.io/gh/vrcmarcos%2Fpython-deprecated.svg)](https://badge.fury.io/gh/vrcmarcos%2Fpython-deprecated)
 [![Code Health](https://landscape.io/github/vrcmarcos/python-deprecated/master/landscape.svg?style=flat)](https://landscape.io/github/vrcmarcos/python-deprecated/master)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vrcmarcos/python-deprecated/master/LICENSE)
+[![Documentation Status](https://readthedocs.org/projects/python-deprecated/badge/?version=latest)](http://python-deprecated.readthedocs.io/en/latest/?badge=latest)
 
 ## Installation
 
