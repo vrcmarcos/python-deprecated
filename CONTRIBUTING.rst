@@ -133,3 +133,18 @@ all dependencies are installed.
 - ``make test`` runs the basic test suite with ``pytest``
 - ``make cov`` runs the basic test suite with ``coverage``
 - ``make test-all`` runs the full test suite with ``tox``
+
+Generating the documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The documentation is automatically generated with ReadTheDocs for each git push on master.
+You can also generate it manually using Sphinx.
+
+To generate the HTML documentation, run::
+
+    sphinx-build -b html docs/source/ dist/docs/html/
+
+
+To generate the epub v2 documentation, run::
+
+    sphinx-build -b epub2 docs/source/ dist/docs/epub/

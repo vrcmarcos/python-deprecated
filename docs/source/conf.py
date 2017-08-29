@@ -51,8 +51,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Python-Deprecated'
-copyright = '2017, Marcos CARDOSO and Laurent LAPORTE'
-author = 'Marcos CARDOSO and Laurent LAPORTE'
+copyright = '2017, Marcos CARDOSO & Laurent LAPORTE'
+author = 'Marcos CARDOSO & Laurent LAPORTE'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -169,3 +169,26 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/3/': None}
+
+# -- Options for EPub output -------------------------------------------
+
+epub_basename = project
+epub_theme = 'epub'
+epub_theme_options = {
+    # relbar1: If this is true, the relbar1 block is inserted in the epub output, otherwise it is omitted.
+    'relbar1': False,
+
+    # footer: If this is true, the footer block is inserted in the epub output, otherwise it is omitted.
+    'footer': False
+}
+epub_title = "Python-Deprecated Library v1.1 documentation"
+epub_description = "Python @deprecated decorator to deprecate old python classes, functions or methods."
+epub_author = author
+epub_contributor = "Original idea from Leandro REGUEIRO, Patrizio BERTONI, Eric WIESER"
+epub_language = language or 'en'
+epub_publisher = "www.lulu.com"
+epub_copyright = copyright
+epub_identifier = "978-0-244-62776-8"
+epub_scheme = 'ISBN'
+epub_uid = "BookId"  # dacd6b24-3909-4358-8527-359be2e25777
+epub_cover = ('_static/title-page.jpg', '')
