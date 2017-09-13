@@ -4,7 +4,7 @@ Welcome to Python-Deprecated
 .. image:: _static/logo-full.png
    :alt: Python-Deprecated: When once-stable features are removed in upcoming releases
 
-Welcome to Python-Deprecated’s documentation.
+Welcome to Python-Deprecated’s Documentation.
 This documentation is divided into different parts.
 I recommend that you get started with :ref:`installation` and then head over to the :ref:`tutorial`.
 If you'd rather dive into the internals of Python-Deprecated, check out the :ref:`api` documentation.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Python-Deprecated documentation build configuration file, created by
+# Python-Deprecated Documentation build configuration file, created by
 # sphinx-quickstart on Wed Jul 19 22:23:11 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -181,7 +181,7 @@ epub_theme_options = {
     # footer: If this is true, the footer block is inserted in the epub output, otherwise it is omitted.
     'footer': False
 }
-epub_title = "Python-Deprecated Library v1.1 documentation"
+epub_title = "Python-Deprecated Library v1.1 Documentation"
 epub_description = "Python @deprecated decorator to deprecate old python classes, functions or methods."
 epub_author = author
 epub_contributor = "Original idea from Leandro REGUEIRO, Patrizio BERTONI, Eric WIESER"
