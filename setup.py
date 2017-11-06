@@ -63,7 +63,7 @@ from setuptools import setup
 
 setup(
     name='Python-Deprecated',
-    version='1.0.0',
+    version='1.1.0',
     url='https://github.com/vrcmarcos/python-deprecated',
     license='MIT',
     author='Marcos Cardoso',
